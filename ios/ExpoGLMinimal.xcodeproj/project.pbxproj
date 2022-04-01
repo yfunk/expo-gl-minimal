@@ -11,9 +11,11 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		585A151AAC30730ED9F04247 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFA1549A6904E8200C053C3 /* ExpoModulesProvider.swift */; };
 		6172F2D35A4C3AA820D92908 /* libPods-ExpoGLMinimal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-ExpoGLMinimal.a */; };
 		7EF68E3733C33B6898317E18 /* libPods-ExpoGLMinimal-ExpoGLMinimalTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-ExpoGLMinimal-ExpoGLMinimalTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C412DB72BE43426CB3FC3EE5 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631A2DBFD3021250691FF1C7 /* ExpoModulesProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ExpoGLMinimal/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ExpoGLMinimal/main.m; sourceTree = "<group>"; };
 		1D0AE47A65C8663E3B452821 /* Pods-ExpoGLMinimal-ExpoGLMinimalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpoGLMinimal-ExpoGLMinimalTests.release.xcconfig"; path = "Target Support Files/Pods-ExpoGLMinimal-ExpoGLMinimalTests/Pods-ExpoGLMinimal-ExpoGLMinimalTests.release.xcconfig"; sourceTree = "<group>"; };
+		2BFA1549A6904E8200C053C3 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-ExpoGLMinimal/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		631A2DBFD3021250691FF1C7 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-ExpoGLMinimal-ExpoGLMinimalTests/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
 		6423831EA8574132BED9D8CC /* libPods-ExpoGLMinimal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExpoGLMinimal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C97AB639B58BBB4B15BBE30 /* Pods-ExpoGLMinimal-ExpoGLMinimalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExpoGLMinimal-ExpoGLMinimalTests.debug.xcconfig"; path = "Target Support Files/Pods-ExpoGLMinimal-ExpoGLMinimalTests/Pods-ExpoGLMinimal-ExpoGLMinimalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ExpoGLMinimal/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,6 +110,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3655164D5FE784345FFEEC06 /* ExpoGLMinimal */ = {
+			isa = PBXGroup;
+			children = (
+				2BFA1549A6904E8200C053C3 /* ExpoModulesProvider.swift */,
+			);
+			name = ExpoGLMinimal;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +134,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				E233CBF5F47BEE60B243DCF8 /* Pods */,
+				996FAC8A31486A12E7D830A5 /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -135,6 +148,23 @@
 				00E356EE1AD99517003FC87E /* ExpoGLMinimalTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		996FAC8A31486A12E7D830A5 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				3655164D5FE784345FFEEC06 /* ExpoGLMinimal */,
+				9D4A2D5203525F5347E1FB58 /* ExpoGLMinimalTests */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+		9D4A2D5203525F5347E1FB58 /* ExpoGLMinimalTests */ = {
+			isa = PBXGroup;
+			children = (
+				631A2DBFD3021250691FF1C7 /* ExpoModulesProvider.swift */,
+			);
+			name = ExpoGLMinimalTests;
 			sourceTree = "<group>";
 		};
 		E233CBF5F47BEE60B243DCF8 /* Pods */ = {
@@ -404,6 +434,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00E356F31AD99517003FC87E /* ExpoGLMinimalTests.m in Sources */,
+				C412DB72BE43426CB3FC3EE5 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +444,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				585A151AAC30730ED9F04247 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,7 +593,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -626,7 +658,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 i386";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
